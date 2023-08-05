@@ -40,10 +40,12 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.textBox_password = new System.Windows.Forms.TextBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -130,7 +132,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::LogReg_Application.Properties.Resources.visible;
-            this.pictureBox3.Location = new System.Drawing.Point(331, 136);
+            this.pictureBox3.Location = new System.Drawing.Point(331, 138);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(25, 27);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -141,7 +143,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = global::LogReg_Application.Properties.Resources.visibility;
-            this.pictureBox4.Location = new System.Drawing.Point(331, 136);
+            this.pictureBox4.Location = new System.Drawing.Point(331, 138);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(25, 27);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -171,11 +173,22 @@
             this.textBox_password.Size = new System.Drawing.Size(160, 27);
             this.textBox_password.TabIndex = 26;
             // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::LogReg_Application.Properties.Resources.visibility;
+            this.pictureBox5.Location = new System.Drawing.Point(331, 138);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(25, 27);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 37;
+            this.pictureBox5.TabStop = false;
+            // 
             // sign_in
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(460, 274);
+            this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.textBox_password);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox3);
@@ -195,6 +208,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -214,5 +228,6 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox_password;
+        private System.Windows.Forms.PictureBox pictureBox5;
     }
 }
