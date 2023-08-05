@@ -69,6 +69,31 @@ namespace LogReg_Application
             database.closeConnection();
         }
 
+        private Boolean CheckUser()
+        {
+            var loginUser = textBox_login2.Text;
+            var password = textBox_password2.Text;
+
+            SqlDataAdapter adapter = new SqlDataAdapter();
+            DataTable table = new DataTable();
+
+            string querystring = $"SELECT id_user, login_user, password_user FROM register WHERE login_user = '{loginUser}' AND password_user = '{password}'";
+
+            SqlCommand command = new SqlCommand( querystring, database.getConnection());
+
+            adapter.SelectCommand = command;
+            adapter.Fill(table);
+
+            if(table.Rows.Count > 0)
+            {
+                MessageBox.Show("This user exist yet!");
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
 
         private void button1_Click(object sender, EventArgs e)
         {
