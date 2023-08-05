@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CECAD47A-675F-41C8-8DA5-F8448B5BA0CB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>LogReg_Application</RootNamespace>
+    <AssemblyName>LogReg_Application</AssemblyName>
+    <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataGridView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataGridView.Designer.cs">
+      <DependentUpon>DataGridView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="sign_up.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sign_up.Designer.cs">
+      <DependentUpon>sign_up.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sign_in.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sign_in.Designer.cs">
+      <DependentUpon>sign_in.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DataGridView.resx">
+      <DependentUpon>DataGridView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sign_in.resx">
+      <DependentUpon>sign_in.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sign_up.resx">
+      <DependentUpon>sign_up.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Forms_Icons\add-friend.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Forms_Icons\contact.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Forms_Icons\edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Forms_Icons\email.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Forms_Icons\eraser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Forms_Icons\group.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Forms_Icons\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Forms_Icons\key.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Forms_Icons\lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Forms_Icons\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Forms_Icons\log-in.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Forms_Icons\loupe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Forms_Icons\maps-and-flags.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Forms_Icons\note.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Forms_Icons\notes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Forms_Icons\registration.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Forms_Icons\safe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Forms_Icons\sign-in.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Forms_Icons\trash-can.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Forms_Icons\user-avatar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Forms_Icons\visibility.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Forms_Icons\visible.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Forms_Icons\world-wide-web.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
