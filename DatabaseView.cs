@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace LogReg_Application
 {
-    public partial class DataGridView : Form
+    public partial class DatabaseView : Form
     {
-        public DataGridView()
+        public DatabaseView()
         {
             InitializeComponent();
         }

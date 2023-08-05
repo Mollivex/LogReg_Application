@@ -1,6 +1,6 @@
 ﻿namespace LogReg_Application
 {
-    partial class DataGridView
+    partial class DatabaseView
     {
         /// <summary>
         /// Required designer variable.

@@ -15,6 +15,7 @@ namespace LogReg_Application
         public sign_up()
         {
             InitializeComponent();
+            StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void sign_up_Load(object sender, EventArgs e)

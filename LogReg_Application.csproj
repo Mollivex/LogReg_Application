@@ -49,11 +49,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataBase.cs" />
-    <Compile Include="DataGridView.cs">
+    <Compile Include="DatabaseView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DataGridView.Designer.cs">
-      <DependentUpon>DataGridView.cs</DependentUpon>
+    <Compile Include="DatabaseView.Designer.cs">
+      <DependentUpon>DatabaseView.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -79,8 +79,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="DataGridView.resx">
-      <DependentUpon>DataGridView.cs</DependentUpon>
+    <EmbeddedResource Include="DatabaseView.resx">
+      <DependentUpon>DatabaseView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
