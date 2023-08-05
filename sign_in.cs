@@ -15,6 +15,12 @@ namespace LogReg_Application
         public sign_in()
         {
             InitializeComponent();
+            
+        }
+
+        private void sign_in_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

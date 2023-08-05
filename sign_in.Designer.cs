@@ -49,9 +49,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::LogReg_Application.Properties.Resources.log_in;
-            this.pictureBox1.Location = new System.Drawing.Point(165, 169);
+            this.pictureBox1.Location = new System.Drawing.Point(161, 169);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(53, 66);
+            this.pictureBox1.Size = new System.Drawing.Size(57, 66);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 22;
             this.pictureBox1.TabStop = false;
@@ -183,6 +183,7 @@
             this.Controls.Add(this.pictureBox4);
             this.Name = "sign_in";
             this.Text = "Authorization Form";
+            this.Load += new System.EventHandler(this.sign_in_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
